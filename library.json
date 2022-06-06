@@ -1,0 +1,21 @@
+{
+  "name": "ESP2SOTA",
+  "keywords": "Self Sufficient, OTA, Update, ESP, ESP8266, ESP32, AP",
+  "description": "Async OTA (AP & Client WiFi modes) for ESP32/ESP8266 with no external dependencies (no jQuery needed)",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/pangodream/ESP2SOTA.git"
+  },
+  "authors":
+  [
+    {
+      "name": "Alberto Iriberri",
+      "email": "alberto.iriberri@pangodream.es",
+      "maintainer": true
+    }
+  ],
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "espressif"
+}
