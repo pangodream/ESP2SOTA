@@ -12,7 +12,7 @@ ESP2SOTAClass::ESP2SOTAClass(){
 #endif
   _server = server;
   //Returns index.html page
-  _server->on("/", HTTP_GET, [&]() {
+  _server->on("/update", HTTP_GET, [&]() {
     _server->sendHeader("Connection", "close");
     _server->send(200, "text/html", indexHtml);
   });
