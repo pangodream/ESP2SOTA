@@ -2,7 +2,7 @@
     const char* indexHtml =
     "<body style='font-family: Verdana,sans-serif; font-size: 14px;'>"
     "<div style='width:400px;padding:20px;border-radius:10px;border:solid 2px #e0e0e0;margin:auto;margin-top:20px;'>"
-    "<div style='width:100%;text-align:center;font-size:18px;font-weight:bold;margin-bottom:12px;'>ESP Self Sufficient OTA</div>"
+    "<div style='width:100%;text-align:center;font-size:18px;font-weight:bold;margin-bottom:12px;'>ESP 2S OTA</div>"
        "<form method='POST' action='#' enctype='multipart/form-data' id='upload-form' style='width:100%;margin-bottom:8px;'>"
          "<input type='file' name='update'>"
          "<input type='submit' value='Update' style='float:right;'>"
