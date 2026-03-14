@@ -145,7 +145,7 @@ form.addEventListener("submit", (e) => {
 
 function waitForDevice(){
   const interval = setInterval(()=>{
-    fetch("/",{cache:"no-store"})
+    fetch("/update",{cache:"no-store"})
       .then(()=>{
         clearInterval(interval);
         status.innerText="Device updated successfully ✓";
