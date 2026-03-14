@@ -77,7 +77,7 @@ body{
 <div class="ota-container">
   <div class="ota-title">ESP 2S OTA</div>
 
-  <form id="upload-form" class="ota-form" method="POST" enctype="multipart/form-data">
+  <form id="upload-form" action='#' class="ota-form" method="POST" enctype="multipart/form-data">
     <input type="file" name="update" accept=".bin" required>
     <input type="submit" value="Update" class="update-button">
   </form>
@@ -112,8 +112,6 @@ form.addEventListener("submit", (e) => {
   progressText.innerText="0%";
   status.innerText="";
 
-  Array.from(form.elements).forEach(el => el.disabled = true);
-
   const data = new FormData(form);
   const req = new XMLHttpRequest();
 
@@ -141,6 +139,8 @@ form.addEventListener("submit", (e) => {
   };
 
   req.send(data);
+  
+  Array.from(form.elements).forEach(el => el.disabled = true);
 });
 
 function waitForDevice(){
